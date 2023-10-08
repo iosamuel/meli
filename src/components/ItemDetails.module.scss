@@ -1,0 +1,61 @@
+@import "../styles/variables.module.scss";
+
+.itemDetails {
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2rem;
+
+  &__top {
+    display: flex;
+    height: 680px;
+
+    figure {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+
+      > * {
+        margin-bottom: 2rem;
+      }
+
+      &__details {
+        margin-bottom: 1rem;
+        font-size: $text-small;
+        color: $grey;
+      }
+
+      h2 {
+        font-size: $text-large;
+      }
+
+      &__price {
+        font-size: $text-xxlarge;
+      }
+
+      button {
+        background-color: $blue;
+        color: white;
+        margin-right: 2rem;
+        padding: 0.75rem 1rem;
+      }
+    }
+  }
+
+  &__description {
+    margin-top: 2rem;
+
+    h3 {
+      font-size: $text-xlarge;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: $grey;
+    }
+  }
+}

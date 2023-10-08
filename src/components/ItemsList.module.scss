@@ -1,0 +1,46 @@
+@import "../styles/variables.module.scss";
+
+.itemsList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #fff;
+    border-bottom: 1px solid $lighterGrey;
+
+    > img {
+      border-radius: 4px;
+      margin-right: 1rem;
+    }
+
+    &__top {
+      width: 100%;
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    &__price {
+      font-size: $text-large;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    &__condition {
+      font-size: $text-xsmall;
+      color: $lightGrey;
+    }
+
+    h3 {
+      font-size: $text-medium;
+      max-width: 50%;
+    }
+  }
+}
